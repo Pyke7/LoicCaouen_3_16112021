@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url("fonts/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("fonts/shrikhand/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/roboto/roboto-regular-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-medium";
+  src: url("fonts/roboto/roboto-medium-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-light";
+  src: url("fonts/roboto/roboto-light-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-thin";
+  src: url("fonts/roboto/roboto-thin-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  font-size: 100px;
+  font-family: "shrikhand";
+  margin: 0;
+  padding: 70px 0 40px 0;
+}
+
+.footer {
+  background-color: #414141;
+  color: #FFFFFF;
+  padding: 70px 70px 90px 70px;
+  font-size: 50px;
+}
+.footer a {
+  color: #FFFFFF;
+}
+.footer__title {
+  font-family: "shrikhand";
+  margin-top: 0;
+}
+.footer__infos {
+  font-family: "roboto-light";
+}
+.footer__ustensils-hands {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__icons {
+  margin-right: 30px;
+}
+.footer__icons.ustensils {
+  font-size: 45px;
+}
+.footer__icons.hands-helping {
+  font-size: 28px;
+}
+
+/*# sourceMappingURL=style.css.map */

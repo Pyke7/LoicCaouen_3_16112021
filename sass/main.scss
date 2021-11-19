@@ -1,0 +1,53 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/fonts.scss";
+@import "./base/normes";
+
+.header{
+    @include flex-center;
+
+    &__title{
+        font-size: 100px;
+        font-family: 'shrikhand';
+        margin: 0;
+        padding: 70px 0 40px 0;
+    }
+}
+
+.footer{
+    background-color: $color-bg-footer;
+    color: $color-txt-footer;
+    padding: 70px 70px 90px 70px;
+    font-size: 50px;
+
+    a{
+        color: $color-txt-footer;
+    }
+
+    &__title{
+        font-family: 'shrikhand';
+        margin-top: 0;
+    }
+
+    &__infos{
+        font-family: 'roboto-light';
+    }
+
+    &__ustensils-hands{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__icons{
+        margin-right: 30px;
+
+        &.ustensils{
+            font-size: 45px;
+        }
+
+        &.hands-helping{
+            font-size: 28px;
+        }
+    }
+}
