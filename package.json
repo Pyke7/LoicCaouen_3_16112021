@@ -1,0 +1,20 @@
+{
+  "name": "p3_caouen_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pyke7/LoicCaouen_3_16112021.git"
+  },
+  "author": "Loïc Caouën",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pyke7/LoicCaouen_3_16112021/issues"
+  },
+  "homepage": "https://github.com/Pyke7/LoicCaouen_3_16112021#readme"
+}
