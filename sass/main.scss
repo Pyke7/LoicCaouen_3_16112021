@@ -18,40 +18,48 @@
 .geo{
     @include flex-center;
     font-size:50px;
-    background-color: #dddbdb;
-    box-shadow: 0 10px 10px inset #bbb8b8;
+    background-color: #EAEAEA;
+    box-shadow: 0 10px 10px #D5D5D5 inset;
+    color: $color-geo;
+    padding: 40px;
 
     &__icon{
-        color: #3d3d3d;
-        margin-right: 40px;
+        margin-right: 50px; 
     }
 
     &__city{
-        color: #3d3d3d;
+        margin: 0;
     }
 }
 
-.reservez{
+.description{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-size: 40px;
-    background-color: #f5f3f3;
-    padding: 50px;
+    background-color: #F6F6F6;
+    padding: 65px;
     text-align: center;
 
     &__title{
-        font-family: 'roboto';
+        font-size: $font-size-h2;
         margin-bottom: 0;
+        flex-wrap: wrap;
     }
 
-    &__btn-resto{
-        @include btn;
+    &__details{
+        font-family: 'roboto-light';
+        font-size: $font-size-descritpion;
+        margin-top: 30px;
+    }
+
+    &__btn{
+        @include btn-resto;   
     }
 }
 
 .fonctionnement{
+    display: none;
     padding: 30px;
     font-size: 50px;
 

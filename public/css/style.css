@@ -56,39 +56,51 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  background-color: #dddbdb;
-  box-shadow: 0 10px 10px inset #bbb8b8;
+  background-color: #EAEAEA;
+  box-shadow: 0 10px 10px #D5D5D5 inset;
+  color: #353535;
+  padding: 40px;
 }
 .geo__icon {
-  color: #3d3d3d;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 .geo__city {
-  color: #3d3d3d;
+  margin: 0;
 }
 
-.reservez {
+.description {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: 40px;
-  background-color: #f5f3f3;
-  padding: 50px;
+  background-color: #F6F6F6;
+  padding: 65px;
   text-align: center;
 }
-.reservez__title {
-  font-family: "roboto";
+.description__title {
+  font-size: 60px;
   margin-bottom: 0;
+  flex-wrap: wrap;
 }
-.reservez__btn-resto {
-  color: white;
-  background-color: #9356DC;
-  padding: 25px;
-  border-radius: 25px;
+.description__details {
+  font-family: "roboto-light";
+  font-size: 50px;
+  margin-top: 30px;
+}
+.description__btn {
+  font-size: 50px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: linear-gradient(-5deg, #A85DDB, #FF79DA);
+  padding: 45px 65px;
+  border: transparent;
+  border-radius: 5000px;
+  box-shadow: 10px 15px 20px #d5d5d5;
+  margin: 30px 0 54px 0;
 }
 
 .fonctionnement {
+  display: none;
   padding: 30px;
   font-size: 50px;
 }
