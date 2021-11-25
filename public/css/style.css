@@ -100,12 +100,83 @@ a {
 }
 
 .fonctionnement {
-  display: none;
-  padding: 30px;
-  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 60px;
+  font-size: 45px;
 }
 .fonctionnement__title {
+  font-size: 60px;
+  font-family: "roboto-medium";
+  margin: 40px 0 60px 0;
+}
+.fonctionnement__full-step {
+  width: 100%;
+}
+.fonctionnement__full-step__card-step {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-step {
+  margin-bottom: 60px;
+}
+.card-step__step {
+  background-color: #F6F6F6;
+  border: transparent;
+  border-radius: 60px;
+  padding: 60px 100px;
+  box-shadow: 10px 15px 20px #d5d5d5;
+  left: 25px;
+  width: 100%;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.card-step__step__menu-burger {
+  font-size: 40px;
+}
+.card-step__step:hover i {
+  color: #9356DC;
+}
+.card-step__cercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+}
+
+.step__names {
+  margin: 10px 0;
+}
+.step__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 60px;
+}
+.step i {
+  color: #7e7e7e;
   font-size: 50px;
+}
+.step:hover {
+  background-color: #efe7f3;
+}
+.step:hover i {
+  color: #9356DC;
 }
 
 .footer {

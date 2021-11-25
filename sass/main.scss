@@ -59,14 +59,85 @@
 }
 
 .fonctionnement{
-    display: none;
-    padding: 30px;
-    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 60px;
+    font-size: 45px;
 
     &__title{
-        font-size: 50px;
+        font-size: 60px;
+        font-family: 'roboto-medium';
+        margin: 40px 0 60px 0;
+    }
+
+    &__full-step{
+        width: 100%;
+        &__card-step{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
 }
+
+.card-step{
+    margin-bottom: 60px;
+    
+    &__step{
+        @include step;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &__menu-burger{
+            font-size: 40px;
+        }
+
+        &:hover{
+            i{
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__cercle{
+        @include cercle;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.step{
+    &__names{
+        margin: 10px 0;
+    }
+
+    &__icon-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin-right: 60px;
+    }
+
+    i{
+        color: #7e7e7e;
+        font-size: 50px;
+    }
+
+    &:hover{
+        background-color: #efe7f3;
+
+        i{
+            color: $color-primary;
+        }
+    }
+}
+
+
 
 .footer{
     background-color: $color-bg-footer;

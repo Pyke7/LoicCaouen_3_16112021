@@ -21,3 +21,26 @@
     box-shadow: 10px 15px 20px #d5d5d5;
     margin: 30px 0 54px 0;
 }
+
+@mixin step{
+    background-color: #F6F6F6;
+    border: transparent;
+    border-radius: 60px;
+    padding: 60px 100px;
+    box-shadow: 10px 15px 20px #d5d5d5;
+    left: 25px;
+    width: 100%;
+    font-weight: bold;
+}
+
+@mixin cercle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: $color-primary;
+    color: white;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+}
