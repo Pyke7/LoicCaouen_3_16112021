@@ -4,6 +4,8 @@
 @import "./base/fonts.scss";
 @import "./base/normes";
 
+// ----------header----------
+
 .header{
     @include flex-center;
 
@@ -15,7 +17,9 @@
     }
 }
 
-.geo{
+// ----------Localisation----------
+
+.geo{ /*icone et nom des villes*/
     @include flex-center;
     font-size:50px;
     background-color: #EAEAEA;
@@ -32,12 +36,14 @@
     }
 }
 
-.description{
+// ----------Présentation----------
+
+.description{ /*presentation et bouton "explorer nos restaurants*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F6F6F6;
+    background-color: $bg-desc-resto;
     padding: 65px;
     text-align: center;
 
@@ -58,12 +64,14 @@
     }
 }
 
+// ----------Fonctionnement----------
+
 .fonctionnement{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 100px 60px;
+    padding: $padding-section;
     font-size: 45px;
 
     &__title{
@@ -91,10 +99,6 @@
         display: flex;
         align-items: center;
 
-        &__menu-burger{
-            font-size: 40px;
-        }
-
         &:hover{
             i{
                 color: $color-primary;
@@ -102,7 +106,7 @@
         }
     }
 
-    &__cercle{
+    &__cercle{ /*superposition du cercle sur step*/
         @include cercle;
         position: absolute;
         z-index: 1;
@@ -114,7 +118,7 @@
         margin: 10px 0;
     }
 
-    &__icon-container{
+    &__icon-container{ /*alignement et taille des icones par rapport au nom de l'étape */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -137,7 +141,19 @@
     }
 }
 
+// ----------section restaurants----------
 
+.restaurants{
+    padding: $padding-section;
+    background-color: $bg-desc-resto;
+
+    &__title{
+        font-size: 60px;
+        font-family: 'roboto-medium';
+    }
+}
+
+// ----------footer----------
 
 .footer{
     background-color: $color-bg-footer;
