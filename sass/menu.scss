@@ -1,0 +1,86 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/buttons.scss";
+@import "./base/fonts.scss";
+@import "./base/normes";
+
+// ----------header----------
+
+.header{
+    @include flex-row-center;
+    align-items: center;
+    padding: 70px 0 40px 0;
+    &__title{
+        font-size: 100px;
+        font-family: 'shrikhand';
+        margin: 0;
+        position: relative
+    }
+
+    &__logo-return{
+        @include flex-center;
+        font-size: 70px;
+        position: absolute;
+        left: 70px;
+    }
+}
+
+// image d'illustration
+
+.illustration{
+    z-index: 0;
+    position: relative;
+}
+
+// section bloc-menu
+
+.bloc-menu{
+    padding: 40px;
+    background-color: $bg-desc-resto;
+    border-radius: 40px 40px 0 0;
+    position: absolute;
+    top: 500px;
+
+    &__header{
+        @include flex-row-start;
+    }
+}
+
+// ----------footer----------
+
+.footer{
+    background-color: $color-bg-footer;
+    color: $color-txt-footer;
+    padding: 70px 70px 90px 70px;
+    font-size: 50px;
+
+    a{
+        color: $color-txt-footer;
+    }
+
+    &__title{
+        font-family: 'shrikhand';
+        margin-top: 0;
+    }
+    &__infos{
+        font-family: 'roboto-light';
+    }
+
+    &__ustensils-hands{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__icons{
+        margin-right: 30px;
+
+        &.ustensils{
+            font-size: 45px;
+        }
+
+        &.hands-helping{
+            font-size: 28px;
+        }
+    }
+}
