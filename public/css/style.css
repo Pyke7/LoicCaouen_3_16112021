@@ -40,6 +40,15 @@ a {
   color: black;
 }
 
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -56,7 +65,6 @@ a {
   /*icone et nom des villes*/
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 50px;
   background-color: #EAEAEA;
   box-shadow: 0 10px 10px #D5D5D5 inset;
@@ -188,6 +196,72 @@ a {
 .restaurants__title {
   font-size: 60px;
   font-family: "roboto-medium";
+}
+.restaurants__bloc-resto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.card-resto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: transparent;
+  border-radius: 30px;
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #fff;
+  border-radius: 35px;
+  margin-bottom: 50px;
+  box-shadow: 10px 15px 20px #e4e4e4;
+}
+.card-resto img {
+  height: 400px;
+  border-radius: 35px 35px 0 0;
+}
+
+.caption {
+  /*mise en forme de figcaption des card*/
+  padding: 40px;
+}
+.caption__names {
+  margin: 0;
+  font-family: "roboto-medium";
+  font-size: 50px;
+}
+.caption__quartier {
+  margin: 10px 0 0 0;
+  font-family: "roboto-light";
+  font-size: 50px;
+}
+.caption__nouveau {
+  display: flex;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  font-weight: bold;
+  padding: 15px 40px;
+  width: 150px;
+  border-radius: 10px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  /*style du rectangle "nouveau" sur les 2 premières card*/
+}
+.caption__nouveau p {
+  margin: 0;
+  font-size: 40px;
+}
+.caption__heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 90px;
+  bottom: 90px;
+  font-size: 70px;
 }
 
 .footer {
