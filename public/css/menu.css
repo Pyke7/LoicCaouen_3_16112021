@@ -70,28 +70,107 @@ figure {
   left: 70px;
 }
 
-.illustration {
-  z-index: 0;
-  position: relative;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+.menu .btn__commander {
+  font-size: 50px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: linear-gradient(-5deg, #A85DDB, #FF79DA);
+  padding: 45px 65px;
+  border: transparent;
+  border-radius: 5000px;
+  box-shadow: 10px 15px 20px #d5d5d5;
+  margin: 30px 0 54px 0;
+  cursor: pointer;
+  margin-bottom: 160px;
+  padding: 45px 150px;
 }
 
 .bloc-menu {
   padding: 40px;
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
-  position: absolute;
-  top: 500px;
+  font-size: 60px;
 }
 .bloc-menu__header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: baseline;
+}
+.bloc-menu__header__title {
+  margin-right: 90px;
+  margin-left: 25px;
+  font-size: 75px;
+  font-family: "shrikhand";
+}
+.bloc-menu__header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloc-menu__bloc-repas {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+.bloc-menu__bloc-repas__title {
+  font-family: "roboto-light";
+  font-weight: normal;
+  font-size: 50px;
+  margin: 25px;
+  text-transform: uppercase;
+}
+.bloc-menu__bloc-repas__separateur {
+  background-color: #99E2D0;
+  height: 10px;
+  width: 125px;
+  margin-left: 25px;
+}
+.bloc-menu__bloc-repas__suggestions {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #FFFFFF;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 10px 15px 20px #e4e4e4;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.card__text__title {
+  font-size: 47px;
+  margin: 0;
+}
+.card__text__desc-supp {
+  font-size: 42px;
+  font-family: "roboto-light";
+  margin: 10px 0 0 0;
+}
+.card__cost {
+  font-size: 45px;
+  font-weight: bold;
+  color: #353535;
+  margin: 0;
 }
 
 .footer {
   background-color: #414141;
   color: #FFFFFF;
-  padding: 70px 70px 90px 70px;
+  padding: 70px 70px 90px 90px;
   font-size: 50px;
 }
 .footer a {

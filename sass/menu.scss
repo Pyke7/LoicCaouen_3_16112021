@@ -25,33 +25,119 @@
     }
 }
 
-// image d'illustration
+// ----------main----------
 
-.illustration{
-    z-index: 0;
-    position: relative;
+.menu{
+    @include flex-column-center;
+    align-items: center;
+    background-color: $bg-desc-resto;
+
+    .btn{
+        
+        &__commander{
+        @include btn-resto;  
+        margin-bottom: 160px; 
+        padding: 45px 150px;
+        }
+    }
 }
 
-// section bloc-menu
+// div d'illustration
+
+// .illustration{
+    
+// }
+
+// div bloc-menu
 
 .bloc-menu{
     padding: 40px;
     background-color: $bg-desc-resto;
     border-radius: 40px 40px 0 0;
-    position: absolute;
-    top: 500px;
+    font-size: 60px;
+    // position: absolute;
+    // top: 500px;
 
     &__header{
         @include flex-row-start;
+        align-items: baseline;
+
+        &__title{
+            margin-right: 90px;
+            margin-left: 25px;
+            font-size: 75px;
+            font-family: 'shrikhand'
+        }
+
+        &__logo{
+            @include flex-center;
+        }
+    }
+
+    &__bloc-repas{
+        @include flex-column-start;
+        align-items: flex-start;
+
+        &__title{
+            font-family: 'roboto-light';
+            font-weight: normal;
+            font-size: 50px;
+            margin: 25px;
+            text-transform: uppercase;
+
+        }
+        &__separateur{
+            background-color: $color-tertiary;
+            height: 10px;
+            width: 125px;
+            margin-left: 25px;
+        }
+        &__suggestions{
+            margin-top: 40px;
+            width: 100%
+        }
+    }
+    
+}
+
+.card{
+    @include flex-row-between;
+    align-items: flex-end;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 10px 15px 20px #e4e4e4;
+    margin-bottom: 50px;
+    cursor: pointer;
+    &__text{
+        &__title{
+            font-size: 47px;
+            margin: 0;
+        }
+        &__desc-supp{
+            font-size: 42px;
+            font-family: 'roboto-light';
+            margin: 10px 0 0 0;
+        }
+    }
+
+    &__cost{
+        font-size: 45px;
+        font-weight: bold;
+        color: #353535;
+        margin: 0;
     }
 }
+
+
+
 
 // ----------footer----------
 
 .footer{
     background-color: $color-bg-footer;
     color: $color-txt-footer;
-    padding: 70px 70px 90px 70px;
+    padding: 70px 70px 90px 90px;
     font-size: 50px;
 
     a{

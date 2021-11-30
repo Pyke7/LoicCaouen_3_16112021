@@ -30,6 +30,12 @@
     align-items: center;
 }
 
+@mixin flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @mixin btn-resto{
     font-size: 50px;
     font-weight: 500;
@@ -40,6 +46,7 @@
     border-radius: 5000px;
     box-shadow: 10px 15px 20px #d5d5d5;
     margin: 30px 0 54px 0;
+    cursor: pointer;
 }
 
 @mixin step{
