@@ -56,7 +56,7 @@ figure {
   padding: 70px 0 40px 0;
 }
 .header__title {
-  font-size: 100px;
+  font-size: 90px;
   font-family: "shrikhand";
   margin: 0;
   position: relative;
@@ -73,8 +73,7 @@ figure {
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
   background-color: #F6F6F6;
 }
 .menu .btn__commander {
@@ -88,25 +87,36 @@ figure {
   box-shadow: 10px 15px 20px #d5d5d5;
   margin: 30px 0 54px 0;
   cursor: pointer;
-  margin-bottom: 160px;
+  margin-bottom: 40px;
   padding: 45px 150px;
+  position: relative;
+  bottom: 125px;
+}
+.menu:last-child {
+  align-items: center;
 }
 
+.illustration {
+  position: relative;
+  height: 700px;
+}
 .bloc-menu {
   padding: 40px;
   background-color: #F6F6F6;
-  border-radius: 40px 40px 0 0;
+  border-radius: 90px 90px 0 0;
   font-size: 60px;
+  position: relative;
+  bottom: 125px;
 }
 .bloc-menu__header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: baseline;
 }
 .bloc-menu__header__title {
   margin-right: 90px;
-  margin-left: 25px;
+  margin-left: 20px;
   font-size: 75px;
   font-family: "shrikhand";
 }
@@ -114,6 +124,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
 }
 .bloc-menu__bloc-repas {
   display: flex;
@@ -125,14 +136,14 @@ figure {
   font-family: "roboto-light";
   font-weight: normal;
   font-size: 50px;
-  margin: 25px;
+  margin: 15px 20px;
   text-transform: uppercase;
 }
 .bloc-menu__bloc-repas__separateur {
   background-color: #99E2D0;
   height: 10px;
   width: 125px;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 .bloc-menu__bloc-repas__suggestions {
   margin-top: 40px;
@@ -148,7 +159,7 @@ figure {
   padding: 40px;
   border-radius: 50px;
   box-shadow: 10px 15px 20px #e4e4e4;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   cursor: pointer;
 }
 .card__text__title {
@@ -172,6 +183,7 @@ figure {
   color: #FFFFFF;
   padding: 70px 70px 90px 90px;
   font-size: 50px;
+  position: relative;
 }
 .footer a {
   color: #FFFFFF;

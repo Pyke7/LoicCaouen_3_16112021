@@ -11,7 +11,7 @@
     align-items: center;
     padding: 70px 0 40px 0;
     &__title{
-        font-size: 100px;
+        font-size: 90px;
         font-family: 'shrikhand';
         margin: 0;
         position: relative
@@ -28,49 +28,59 @@
 // ----------main----------
 
 .menu{
-    @include flex-column-center;
-    align-items: center;
+    @include flex-column-start;
     background-color: $bg-desc-resto;
 
     .btn{
         
         &__commander{
         @include btn-resto;  
-        margin-bottom: 160px; 
+        margin-bottom: 40px; 
         padding: 45px 150px;
+        position: relative;
+        bottom: 125px;
         }
+    }
+
+    &:last-child{
+        align-items: center;
     }
 }
 
 // div d'illustration
 
-// .illustration{
-    
-// }
+.illustration{
+    position: relative;
+    height: 700px;
+    img{
+       
+    }
+}
 
 // div bloc-menu
 
 .bloc-menu{
     padding: 40px;
     background-color: $bg-desc-resto;
-    border-radius: 40px 40px 0 0;
+    border-radius: 90px 90px 0 0;
     font-size: 60px;
-    // position: absolute;
-    // top: 500px;
+    position: relative;
+    bottom: 125px;
 
     &__header{
-        @include flex-row-start;
+        @include flex-row-between;
         align-items: baseline;
 
         &__title{
             margin-right: 90px;
-            margin-left: 25px;
+            margin-left: 20px;
             font-size: 75px;
             font-family: 'shrikhand'
         }
 
         &__logo{
             @include flex-center;
+            margin-right: 50px
         }
     }
 
@@ -82,7 +92,7 @@
             font-family: 'roboto-light';
             font-weight: normal;
             font-size: 50px;
-            margin: 25px;
+            margin: 15px 20px;
             text-transform: uppercase;
 
         }
@@ -90,7 +100,7 @@
             background-color: $color-tertiary;
             height: 10px;
             width: 125px;
-            margin-left: 25px;
+            margin-left: 20px;
         }
         &__suggestions{
             margin-top: 40px;
@@ -107,7 +117,7 @@
     padding: 40px;
     border-radius: 50px;
     box-shadow: 10px 15px 20px #e4e4e4;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     cursor: pointer;
     &__text{
         &__title{
@@ -139,6 +149,7 @@
     color: $color-txt-footer;
     padding: 70px 70px 90px 90px;
     font-size: 50px;
+    position: relative;
 
     a{
         color: $color-txt-footer;
