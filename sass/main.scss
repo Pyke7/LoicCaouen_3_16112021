@@ -11,10 +11,10 @@
     align-items: center;
 
     &__title{
-        font-size: 90px;
+        font-size: 30px;
         font-family: 'shrikhand';
         margin: 0;
-        padding: 70px 0 40px 0;
+        padding: 20px 0 15px 0;
     }
 }
 
@@ -22,14 +22,14 @@
 
 .geo{ /*icone et nom des villes*/
     @include flex-row-center;
-    font-size:50px;
+    font-size: 16px;
     background-color: #EAEAEA;
     box-shadow: 0 10px 10px #D5D5D5 inset;
     color: $color-geo;
-    padding: 40px;
+    padding: 12px;
 
     &__icon{
-        margin-right: 50px; 
+        margin-right: 15px; 
     }
 
     &__city{
@@ -45,7 +45,7 @@
     justify-content: center;
     align-items: center;
     background-color: $bg-desc-resto;
-    padding: 65px;
+    padding: 20px;
     text-align: center;
 
     &__title{
@@ -71,16 +71,16 @@
     @include flex-column-center;
     align-items: flex-start;
     padding: $padding-section;
-    font-size: 45px;
+    font-size: 14px;
 
     &__title{
-        font-size: 60px;
+        font-size: 20px;
         font-family: 'roboto-medium';
-        margin: 40px 0 60px 0;
+        margin: 20px 0;
     }
 
     &__full-step{
-        width: 100%;
+        width: 97%;
         &__card-step{
             display: flex;
             justify-content: flex-start;
@@ -90,8 +90,7 @@
 }
 
 .card-step{
-    margin-bottom: 60px;
-    
+    margin-bottom: 18px;
 
     &__step{
         @include step;
@@ -115,20 +114,20 @@
 
 .step{
     &__names{
-        margin: 10px 0;
+        margin: 0;
     }
 
     &__icon-container{ /*alignement et taille des icones par rapport au nom de l'étape */
         @include flex-row-center;
         align-items: center;
-        width: 60px;
-        height: 60px;
-        margin-right: 60px;
+        width: 15px;
+        height: 15px;
+        margin-right: 20px;
     }
 
     i{
         color: #7e7e7e;
-        font-size: 50px;
+        font-size: 15px;
     }
 
     &:hover{
@@ -147,7 +146,7 @@
     background-color: $bg-desc-resto;
 
     &__title{
-        font-size: 60px;
+        font-size: 20px;
         font-family: 'roboto-medium';
     }
 
@@ -160,31 +159,31 @@
     @include card-resto;
 
     img{
-        height: 400px;
-        border-radius: 35px 35px 0 0;
+        height: 170px;
+        border-radius: 15px 15px 0 0;
     }
 }
 
 .caption{ /*mise en forme de figcaption des card*/
-    padding: 40px;
+    padding: 10px 10px 15px 10px;
 
     &__names{
         margin: 0;
         font-family: 'roboto-medium';
-        font-size: $font-size-standard;
+        font-size: 16px;
     }
 
     &__quartier{
-        margin: 10px 0 0 0;
+        margin: 2px 0 0 0;
         font-family: 'roboto-light';
-        font-size: $font-size-standard;
+        font-size: 15px;
     }
 
     &__nouveau{
         @include nouveau; /*style du rectangle "nouveau" sur les 2 premières card*/
         p{
             margin: 0;
-            font-size: 40px;
+            font-size: 14px;
         }
     }
 
@@ -198,8 +197,8 @@
 .footer{
     background-color: $color-bg-footer;
     color: $color-txt-footer;
-    padding: 70px 70px 90px 90px;
-    font-size: 50px;
+    padding: 20px 20px 35px 30px;
+    font-size: 16px;
 
     a{
         color: $color-txt-footer;
@@ -220,14 +219,19 @@
     }
 
     &__icons{
-        margin-right: 30px;
-
         &.ustensils{
-            font-size: 45px;
+            font-size: 12px;
         }
 
         &.hands-helping{
-            font-size: 28px;
+            font-size: 12px;
         }
     }
+}
+
+.icon-container-footer{
+    @include flex-center;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
 }

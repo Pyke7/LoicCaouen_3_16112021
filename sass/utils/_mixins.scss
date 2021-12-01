@@ -37,25 +37,25 @@
 }
 
 @mixin btn-resto{
-    font-size: 50px;
+    font-size: 15px;
     font-weight: 500;
     color: #FFFFFF;
     background: linear-gradient(-5deg, #A85DDB, $color-secondary);
-    padding: 45px 65px;
+    padding: 15px 20px;
     border: transparent;
     border-radius: 5000px;
     box-shadow: 10px 15px 20px #d5d5d5;
-    margin: 30px 0 54px 0;
+    margin: 10px 0 50px 0;
     cursor: pointer;
 }
 
 @mixin step{
     background-color: #F6F6F6;
     border: transparent;
-    border-radius: 60px;
-    padding: 60px 100px;
-    box-shadow: 10px 15px 20px #d5d5d5;
-    left: 30px;
+    border-radius: 15px;
+    padding: 22px 30px;
+    box-shadow: 10px 15px 20px #e4e4e4;
+    left: 12px;
     width: 100%;
     font-weight: bold;
 }
@@ -64,12 +64,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
     background-color: $color-primary;
     color: white;
+    font-size: 14px;
     border-radius: 40px;
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 15px;
 }
 
 @mixin card-resto{
@@ -77,13 +78,12 @@
     flex-direction: column;
     justify-content: flex-start;
     border: transparent;
-    border-radius: 30px;
     width: 100%;
     position: relative;
     height: auto;
     background-color: #fff;
-    border-radius: 35px;
-    margin-bottom: 50px;
+    border-radius: 15px;
+    margin-bottom: 15px;
     box-shadow: 10px 15px 20px #e4e4e4;
 }
 
@@ -93,12 +93,12 @@
     background-color: $color-tertiary;
     color: darken($color-tertiary, 35%);
     font-weight: bold;
-    padding: 15px 40px;
-    width: 150px;
-    border-radius: 10px;
+    padding: 5px 5px;
+    width: 70px;
+    border-radius: 3px;
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: 12px;
+    top: 15px;
 }
 
 @mixin heart{
@@ -106,7 +106,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        right: 90px;
-        bottom: 90px;
-        font-size: 70px;
+        right: 20px;
+        bottom: 28px;
+        font-size: 20px;
 }
