@@ -53,21 +53,20 @@ figure {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 70px 0 40px 0;
 }
 .header__title {
-  font-size: 90px;
+  font-size: 30px;
   font-family: "shrikhand";
   margin: 0;
-  position: relative;
+  padding: 20px 0 15px 0;
 }
 .header__logo-return {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 70px;
+  font-size: 20px;
   position: absolute;
-  left: 70px;
+  left: 20px;
 }
 
 .menu {
@@ -77,20 +76,20 @@ figure {
   background-color: #F6F6F6;
 }
 .menu .btn__commander {
-  font-size: 50px;
+  font-size: 15px;
   font-weight: 500;
   color: #FFFFFF;
   background: linear-gradient(-5deg, #A85DDB, #FF79DA);
-  padding: 45px 65px;
+  padding: 15px 20px;
   border: transparent;
   border-radius: 5000px;
   box-shadow: 10px 15px 20px #d5d5d5;
-  margin: 30px 0 54px 0;
+  margin: 10px 0 50px 0;
   cursor: pointer;
-  margin-bottom: 40px;
-  padding: 45px 150px;
+  margin-bottom: 20px;
+  padding: 15px 45px;
   position: relative;
-  bottom: 125px;
+  bottom: 45px;
 }
 .menu:last-child {
   align-items: center;
@@ -98,15 +97,16 @@ figure {
 
 .illustration {
   position: relative;
-  height: 700px;
+  height: 215px;
 }
+
 .bloc-menu {
-  padding: 40px;
+  padding: 20px;
   background-color: #F6F6F6;
-  border-radius: 90px 90px 0 0;
-  font-size: 60px;
+  border-radius: 30px 30px 0 0;
+  font-size: 20px;
   position: relative;
-  bottom: 125px;
+  bottom: 45px;
 }
 .bloc-menu__header {
   display: flex;
@@ -115,16 +115,15 @@ figure {
   align-items: baseline;
 }
 .bloc-menu__header__title {
-  margin-right: 90px;
-  margin-left: 20px;
-  font-size: 75px;
+  margin-left: 5px;
+  font-size: 28px;
   font-family: "shrikhand";
 }
 .bloc-menu__header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 .bloc-menu__bloc-repas {
   display: flex;
@@ -135,18 +134,18 @@ figure {
 .bloc-menu__bloc-repas__title {
   font-family: "roboto-light";
   font-weight: normal;
-  font-size: 50px;
-  margin: 15px 20px;
+  font-size: 16px;
+  margin: 20px 5px 5px 5px;
   text-transform: uppercase;
 }
 .bloc-menu__bloc-repas__separateur {
   background-color: #99E2D0;
-  height: 10px;
-  width: 125px;
-  margin-left: 20px;
+  height: 3px;
+  width: 40px;
+  margin-left: 5px;
 }
 .bloc-menu__bloc-repas__suggestions {
-  margin-top: 40px;
+  margin-top: 12px;
   width: 100%;
 }
 
@@ -156,23 +155,23 @@ figure {
   justify-content: space-between;
   align-items: flex-end;
   background-color: #FFFFFF;
-  padding: 40px;
-  border-radius: 50px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 15px;
   box-shadow: 10px 15px 20px #e4e4e4;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 .card__text__title {
-  font-size: 47px;
+  font-size: 16px;
   margin: 0;
 }
 .card__text__desc-supp {
-  font-size: 42px;
+  font-size: 15px;
   font-family: "roboto-light";
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
 }
 .card__cost {
-  font-size: 45px;
+  font-size: 15px;
   font-weight: bold;
   color: #353535;
   margin: 0;
@@ -181,9 +180,8 @@ figure {
 .footer {
   background-color: #414141;
   color: #FFFFFF;
-  padding: 70px 70px 90px 90px;
-  font-size: 50px;
-  position: relative;
+  padding: 20px 20px 35px 30px;
+  font-size: 16px;
 }
 .footer a {
   color: #FFFFFF;
@@ -200,14 +198,20 @@ figure {
   justify-content: flex-start;
   align-items: center;
 }
-.footer__icons {
-  margin-right: 30px;
-}
 .footer__icons.ustensils {
-  font-size: 45px;
+  font-size: 12px;
 }
 .footer__icons.hands-helping {
-  font-size: 28px;
+  font-size: 12px;
+}
+
+.icon-container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=menu.css.map */
