@@ -1,3 +1,5 @@
+@import "./variables";
+
 // ------mixins flexbox------
 
 @mixin flex-row-center {
@@ -39,7 +41,7 @@
 @mixin btn-resto{
     font-size: 15px;
     font-weight: 500;
-    color: #FFFFFF;
+    color: $color-white;
     background: linear-gradient(-5deg, #A85DDB, $color-secondary);
     padding: 15px 20px;
     border: transparent;
@@ -50,11 +52,11 @@
 }
 
 @mixin step{
-    background-color: #F6F6F6;
+    background-color: $bg-principal;
     border: transparent;
     border-radius: 15px;
     padding: 22px 30px;
-    box-shadow: 10px 15px 20px #e4e4e4;
+    box-shadow: 5px 5px 10px $color-box-shadow-card;
     left: 12px;
     width: 100%;
     font-weight: bold;
@@ -66,7 +68,7 @@
     align-items: center;
     padding: 5px;
     background-color: $color-primary;
-    color: white;
+    color: $color-white;
     font-size: 14px;
     border-radius: 40px;
     width: 15px;
@@ -81,10 +83,10 @@
     width: 100%;
     position: relative;
     height: auto;
-    background-color: #fff;
+    background-color: $color-white;
     border-radius: 15px;
     margin-bottom: 15px;
-    box-shadow: 10px 15px 20px #e4e4e4;
+    box-shadow: 5px 5px 10px $color-box-shadow-card;
 }
 
 @mixin nouveau{

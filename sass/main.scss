@@ -3,29 +3,18 @@
 @import "./utils/buttons.scss";
 @import "./base/fonts.scss";
 @import "./base/normes";
+@import "./layout/header";
+@import "./layout/footer";
 
-// ----------header----------
-
-.header{
-    @include flex-row-center;
-    align-items: center;
-
-    &__title{
-        font-size: 30px;
-        font-family: 'shrikhand';
-        margin: 0;
-        padding: 20px 0 15px 0;
-    }
-}
 
 // ----------Localisation----------
 
 .geo{ /*icone et nom des villes*/
     @include flex-row-center;
-    font-size: 16px;
-    background-color: #EAEAEA;
-    box-shadow: 0 10px 10px #D5D5D5 inset;
-    color: $color-geo;
+    font-size: $small-description;
+    background-color: $bg-localisation;
+    box-shadow: 0 10px 10px $color-box-shadow-lieux inset;
+    color: $bg-footer;
     padding: 12px;
 
     &__icon{
@@ -44,19 +33,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $bg-desc-resto;
+    background-color: $bg-principal;
     padding: 20px;
     text-align: center;
 
     &__title{
-        font-size: $font-size-h2;
+        font-size: $large-title;
         margin-bottom: 0;
         flex-wrap: wrap;
     }
 
     &__details{
         font-family: 'roboto-light';
-        font-size: $font-size-standard;
+        font-size: $medium-description;
         margin-top: 30px;
     }
 
@@ -71,10 +60,10 @@
     @include flex-column-center;
     align-items: flex-start;
     padding: $padding-section;
-    font-size: 14px;
+    font-size: $small-description;
 
     &__title{
-        font-size: 20px;
+        font-size: $large-title;
         font-family: 'roboto-medium';
         margin: 20px 0;
     }
@@ -126,7 +115,7 @@
     }
 
     i{
-        color: #7e7e7e;
+        color: $color-icon-fct;
         font-size: 15px;
     }
 
@@ -143,10 +132,10 @@
 
 .restaurants{
     padding: $padding-section;
-    background-color: $bg-desc-resto;
+    background-color: $bg-principal;
 
     &__title{
-        font-size: 20px;
+        font-size: $large-title;
         font-family: 'roboto-medium';
     }
 
@@ -159,31 +148,31 @@
     @include card-resto;
 
     img{
-        height: 170px;
+        height: 150px;
         border-radius: 15px 15px 0 0;
     }
 }
 
 .caption{ /*mise en forme de figcaption des card*/
-    padding: 10px 10px 15px 10px;
+    padding: 7px 10px 15px 10px;
 
     &__names{
         margin: 0;
         font-family: 'roboto-medium';
-        font-size: 16px;
+        font-size: $medium-description;
     }
 
     &__quartier{
         margin: 2px 0 0 0;
         font-family: 'roboto-light';
-        font-size: 15px;
+        font-size: $size-quarter;
     }
 
     &__nouveau{
         @include nouveau; /*style du rectangle "nouveau" sur les 2 premières card*/
         p{
             margin: 0;
-            font-size: 14px;
+            font-size: $small-description;
         }
     }
 
@@ -192,46 +181,4 @@
     }
 }
 
-// ----------footer----------
 
-.footer{
-    background-color: $color-bg-footer;
-    color: $color-txt-footer;
-    padding: 20px 20px 35px 30px;
-    font-size: 16px;
-
-    a{
-        color: $color-txt-footer;
-    }
-
-    &__title{
-        font-family: 'shrikhand';
-        margin-top: 0;
-    }
-    &__infos{
-        font-family: 'roboto-light';
-    }
-
-    &__ustensils-hands{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    &__icons{
-        &.ustensils{
-            font-size: 12px;
-        }
-
-        &.hands-helping{
-            font-size: 12px;
-        }
-    }
-}
-
-.icon-container-footer{
-    @include flex-center;
-    width: 15px;
-    height: 15px;
-    margin-right: 15px;
-}

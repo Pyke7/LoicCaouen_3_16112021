@@ -1,19 +1,28 @@
-// couleurs principales du site
+// ----------colors----------
 
+// ---couleurs principales du site---
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+//---couleurs standard---
+$color-black: #000000;
+$color-white: #FFFFFF;
+// ---autres couleurs---
+$bg-principal: #F6F6F6;
+$bg-localisation: #EAEAEA;
+$color-icon-fct: #7E7E7E;
+$color-box-shadow-card: #E6E6E6;
+$color-box-shadow-lieux: #CECECE;
+$bg-footer: #353535;
 
-// éléments pratiques
-$bg-desc-resto: #F6F6F6;
+// ----------font-size----------
+$big-title: 25px;
+$large-title: 20px;
+$medium-description: 16px;
+$size-quarter: 15px;
+$small-description: 14px;
+$heart-and-arrow: 20px;
+$icons-footer: 12px;
+
+
 $padding-section: 20px 20px 40px 20px;
-$color-geo: #353535;
-
-$font-size-h2: 22px;
-$font-size-standard: 18px;
-
-
-
-// footer
-$color-bg-footer: #414141;
-$color-txt-footer: #FFFFFF;

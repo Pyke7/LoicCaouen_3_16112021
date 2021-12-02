@@ -1,0 +1,31 @@
+.footer{  /*footer blanc sur gris avec titre 'shrikhand et infos 'roboto-light'*/
+    background-color: $bg-footer;
+    color: $color-white;
+    padding: 20px 20px 35px 30px;
+
+    &__title{
+        font-family: 'shrikhand';
+        margin-top: 0;
+        font-size: $medium-description;
+    }
+    &__infos{
+        font-family: 'roboto-light';
+        font-size: $small-description;
+        line-height: 22px;
+    }
+}
+
+.footer__infos{
+    &--premieres{  /*concerne seulement les deux premiers liens du footer*/
+        @include flex-row-start;
+        align-items: center;
+        &__icon-container{  /*alignement des icones avec le texte*/
+            @include flex-center;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            font-size: $icons-footer;
+        }
+    }
+}
+
