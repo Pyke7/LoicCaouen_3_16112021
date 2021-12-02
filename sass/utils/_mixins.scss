@@ -1,5 +1,3 @@
-@import "./variables";
-
 // ------mixins flexbox------
 
 @mixin flex-row-center {
@@ -12,6 +10,12 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+
+@mixin flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @mixin flex-column-center {
@@ -32,18 +36,12 @@
     align-items: center;
 }
 
-@mixin flex-row-between {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-@mixin btn-resto{
+@mixin btn-setup{
     font-size: 15px;
     font-weight: 500;
     color: $color-white;
     background: linear-gradient(-5deg, #A85DDB, $color-secondary);
-    padding: 15px 20px;
     border: transparent;
     border-radius: 5000px;
     box-shadow: 10px 15px 20px #d5d5d5;

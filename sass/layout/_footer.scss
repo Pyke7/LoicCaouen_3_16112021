@@ -8,6 +8,7 @@
         margin-top: 0;
         font-size: $medium-description;
     }
+
     &__infos{
         font-family: 'roboto-light';
         font-size: $small-description;
@@ -19,6 +20,7 @@
     &--premieres{  /*concerne seulement les deux premiers liens du footer*/
         @include flex-row-start;
         align-items: center;
+
         &__icon-container{  /*alignement des icones avec le texte*/
             @include flex-center;
             width: 15px;

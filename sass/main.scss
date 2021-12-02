@@ -9,29 +9,26 @@
 
 // ----------Localisation----------
 
-.geo{ /*icone et nom des villes*/
+.geo{  /*icone localisation et nom des villes*/
     @include flex-row-center;
     font-size: $small-description;
+    padding: 12px;
+    color: $bg-footer;
     background-color: $bg-localisation;
     box-shadow: 0 10px 10px $color-box-shadow-lieux inset;
-    color: $bg-footer;
-    padding: 12px;
-
     &__icon{
         margin-right: 15px; 
     }
-
     &__city{
         margin: 0;
+        font-weight: bold;
     }
 }
 
 // ----------Présentation----------
 
-.description{ /*presentation et bouton "explorer nos restaurants*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.description{ /*presentation et bouton "explorer nos restaurants"*/
+    @include flex-column-center;
     align-items: center;
     background-color: $bg-principal;
     padding: 20px;
@@ -40,17 +37,17 @@
     &__title{
         font-size: $large-title;
         margin-bottom: 0;
-        flex-wrap: wrap;
     }
 
     &__details{
         font-family: 'roboto-light';
         font-size: $medium-description;
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     &__btn{
-        @include btn-resto;   
+        @include btn-setup; 
+        padding: 15px 20px;  
     }
 }
 
@@ -60,7 +57,6 @@
     @include flex-column-center;
     align-items: flex-start;
     padding: $padding-section;
-    font-size: $small-description;
 
     &__title{
         font-size: $large-title;
@@ -71,8 +67,7 @@
     &__full-step{
         width: 97%;
         &__card-step{
-            display: flex;
-            justify-content: flex-start;
+            @include flex-row-start;
             align-items: center;
         }
     }
@@ -104,6 +99,7 @@
 .step{
     &__names{
         margin: 0;
+        font-size: $small-description;
     }
 
     &__icon-container{ /*alignement et taille des icones par rapport au nom de l'étape */
@@ -155,6 +151,7 @@
 
 .caption{ /*mise en forme de figcaption des card*/
     padding: 7px 10px 15px 10px;
+    color: $color-black;
 
     &__names{
         margin: 0;

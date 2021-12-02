@@ -99,25 +99,26 @@ figure {
 }
 
 .geo {
-  /*icone et nom des villes*/
+  /*icone localisation et nom des villes*/
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 14px;
+  padding: 12px;
+  color: #353535;
   background-color: #EAEAEA;
   box-shadow: 0 10px 10px #CECECE inset;
-  color: #353535;
-  padding: 12px;
 }
 .geo__icon {
   margin-right: 15px;
 }
 .geo__city {
   margin: 0;
+  font-weight: bold;
 }
 
 .description {
-  /*presentation et bouton "explorer nos restaurants*/
+  /*presentation et bouton "explorer nos restaurants"*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,24 +130,23 @@ figure {
 .description__title {
   font-size: 20px;
   margin-bottom: 0;
-  flex-wrap: wrap;
 }
 .description__details {
   font-family: "roboto-light";
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .description__btn {
   font-size: 15px;
   font-weight: 500;
   color: #FFFFFF;
   background: linear-gradient(-5deg, #A85DDB, #FF79DA);
-  padding: 15px 20px;
   border: transparent;
   border-radius: 5000px;
   box-shadow: 10px 15px 20px #d5d5d5;
   margin: 10px 0 50px 0;
   cursor: pointer;
+  padding: 15px 20px;
 }
 
 .fonctionnement {
@@ -155,7 +155,6 @@ figure {
   justify-content: center;
   align-items: flex-start;
   padding: 20px 20px 40px 20px;
-  font-size: 14px;
 }
 .fonctionnement__title {
   font-size: 20px;
@@ -167,6 +166,7 @@ figure {
 }
 .fonctionnement__full-step__card-step {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
@@ -208,6 +208,7 @@ figure {
 
 .step__names {
   margin: 0;
+  font-size: 14px;
 }
 .step__icon-container {
   /*alignement et taille des icones par rapport au nom de l'étape */
@@ -265,6 +266,7 @@ figure {
 .caption {
   /*mise en forme de figcaption des card*/
   padding: 7px 10px 15px 10px;
+  color: #000000;
 }
 .caption__names {
   margin: 0;
