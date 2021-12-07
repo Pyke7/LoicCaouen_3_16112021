@@ -142,7 +142,7 @@ figure {
   color: #FFFFFF;
   background: linear-gradient(-5deg, #A85DDB, #FF79DA);
   border: transparent;
-  border-radius: 5000px;
+  border-radius: 30px;
   box-shadow: 10px 15px 20px #d5d5d5;
   margin: 10px 0 50px 0;
   cursor: pointer;
@@ -164,28 +164,47 @@ figure {
 .fonctionnement__full-step {
   width: 97%;
 }
-.fonctionnement__full-step__card-step {
+
+.card-step {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-}
-
-.card-step {
   margin-bottom: 18px;
 }
 .card-step__step {
+  display: flex;
   background-color: #F6F6F6;
   border: transparent;
   border-radius: 15px;
   padding: 22px 30px;
   box-shadow: 5px 5px 10px #E6E6E6;
-  left: 12px;
   width: 100%;
   font-weight: bold;
-  position: relative;
-  display: flex;
   align-items: center;
+  position: relative;
+  left: 12px;
+}
+.card-step__step__names {
+  margin: 0;
+  font-size: 14px;
+}
+.card-step__step__icon-container {
+  /*alignement et taille des icones par rapport au nom de l'étape */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+}
+.card-step__step i {
+  color: #7E7E7E;
+  font-size: 15px;
+}
+.card-step__step:hover {
+  background-color: #f5edff;
 }
 .card-step__step:hover i {
   color: #9356DC;
@@ -199,36 +218,11 @@ figure {
   background-color: #9356DC;
   color: #FFFFFF;
   font-size: 14px;
-  border-radius: 40px;
+  border-radius: 30px;
   width: 15px;
   height: 15px;
   position: absolute;
   z-index: 1;
-}
-
-.step__names {
-  margin: 0;
-  font-size: 14px;
-}
-.step__icon-container {
-  /*alignement et taille des icones par rapport au nom de l'étape */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 15px;
-  height: 15px;
-  margin-right: 20px;
-}
-.step i {
-  color: #7E7E7E;
-  font-size: 15px;
-}
-.step:hover {
-  background-color: #efe7f3;
-}
-.step:hover i {
-  color: #9356DC;
 }
 
 .restaurants {
@@ -248,15 +242,15 @@ figure {
 .card-resto {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: start;
   border: transparent;
   width: 100%;
-  position: relative;
   height: auto;
   background-color: #FFFFFF;
   border-radius: 15px;
   margin-bottom: 15px;
   box-shadow: 5px 5px 10px #E6E6E6;
+  position: relative;
 }
 .card-resto img {
   height: 150px;
@@ -264,7 +258,7 @@ figure {
 }
 
 .caption {
-  /*mise en forme de figcaption des card*/
+  /*mise en forme de figcaption des cards*/
   padding: 7px 10px 15px 10px;
   color: #000000;
 }
@@ -280,6 +274,7 @@ figure {
 }
 .caption__nouveau {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: #99E2D0;
   color: #2c9c81;
@@ -287,10 +282,10 @@ figure {
   padding: 5px 5px;
   width: 70px;
   border-radius: 3px;
+  /*style du rectangle "nouveau" sur les 2 premières card*/
   position: absolute;
   right: 12px;
   top: 15px;
-  /*style du rectangle "nouveau" sur les 2 premières card*/
 }
 .caption__nouveau p {
   margin: 0;
@@ -300,10 +295,10 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
   position: absolute;
   right: 20px;
   bottom: 28px;
-  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

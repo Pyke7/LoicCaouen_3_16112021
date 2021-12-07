@@ -66,23 +66,42 @@
 
     &__full-step{
         width: 97%;
-        &__card-step{
-            @include flex-row-start;
-            align-items: center;
-        }
+        
     }
 }
 
 .card-step{
+    @include flex-row-start;
+    align-items: center;
     margin-bottom: 18px;
 
     &__step{
         @include step;
-        position: relative;
-        display: flex;
         align-items: center;
+        position: relative;
+        left: 12px;
+
+        &__names{
+            margin: 0;
+            font-size: $small-description;
+        }
+
+        &__icon-container{ /*alignement et taille des icones par rapport au nom de l'étape */
+            @include flex-row-center;
+            align-items: center;
+            width: 15px;
+            height: 15px;
+            margin-right: 20px;
+        }
+
+        i{
+            color: $color-icon-fct;
+            font-size: 15px;
+        }
 
         &:hover{
+            background-color: #f5edff;
+    
             i{
                 color: $color-primary;
             }
@@ -93,34 +112,6 @@
         @include cercle;
         position: absolute;
         z-index: 1;
-    }
-}
-
-.step{
-    &__names{
-        margin: 0;
-        font-size: $small-description;
-    }
-
-    &__icon-container{ /*alignement et taille des icones par rapport au nom de l'étape */
-        @include flex-row-center;
-        align-items: center;
-        width: 15px;
-        height: 15px;
-        margin-right: 20px;
-    }
-
-    i{
-        color: $color-icon-fct;
-        font-size: 15px;
-    }
-
-    &:hover{
-        background-color: #efe7f3;
-
-        i{
-            color: $color-primary;
-        }
     }
 }
 
@@ -142,6 +133,7 @@
 
 .card-resto{
     @include card-resto;
+    position: relative;
 
     img{
         height: 150px;
@@ -149,7 +141,7 @@
     }
 }
 
-.caption{ /*mise en forme de figcaption des card*/
+.caption{ /*mise en forme de figcaption des cards*/
     padding: 7px 10px 15px 10px;
     color: $color-black;
 
@@ -167,6 +159,10 @@
 
     &__nouveau{
         @include nouveau; /*style du rectangle "nouveau" sur les 2 premières card*/
+        position: absolute;
+        right: 12px;
+        top: 15px;
+
         p{
             margin: 0;
             font-size: $small-description;
@@ -175,6 +171,9 @@
 
     &__heart{
         @include heart;
+        position: absolute;
+        right: 20px;
+        bottom: 28px;
     }
 }
 
