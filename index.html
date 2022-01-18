@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="./public/css/style.css">
         <script src="https://kit.fontawesome.com/a5bdff5a37.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">
         <title>Ohmyfood!</title>
     </head>
     <body>
+        <!-- <div class="loader-container"><i class="fas fa-spinner"></i></div> loader de la page avec fond grisé -->
         <header class="header"> <!--titre centré avec un padding 'shrikhand'-->
-            <h1 class="header__title">ohmyfood</h1>
+            <h1 class="header__title"><a href="./index.html"> ohmyfood</a></h1>
         </header>
         <main>
             <div class="geo"> <!--icone geo et villes sur la même ligne-->
@@ -19,8 +20,9 @@
             <div class="description"> <!--tout est centré-->
                 <h2 class="description__title">Réservez le menu qui vous convient</h2>
                 <p class="description__details">Découvrez des restaurants d'execption, séléctionnés par nos soins.</p>
-                <button class="description__btn">Explorer nos restaurants</button>
+                <a href="#restaurants"><button class="description__btn">Explorer nos restaurants</button></a>
             </div>
+            <div class="desktop-responsive">
             <section class="fonctionnement"> <!--fonctionnement=un titre + 3 étapes (padding)-->
                 <h2 class="fonctionnement__title">Fonctionnement</h2>
                 <div class="fonctionnement__full-step full-step">
@@ -47,7 +49,7 @@
                     </div>
                 </div>
             </section>
-            <section class="restaurants">
+            <section class="restaurants" id="restaurants">
                 <h2 class="restaurants__title title">Restaurants</h2>
                 <div class="restaurants__bloc-resto bloc-resto">
                     <div class="restaurants__bloc-resto__card-resto card-resto">
@@ -58,7 +60,7 @@
                                     <h3 class="caption__names">La palette du goût</h3>
                                     <p class="caption__quartier">Ménilmontant</p>
                                     <div class="caption__nouveau"><p>Nouveau</p></div>
-                                    <div class="caption__heart"><i class="far fa-heart"></i></div>
+                                    <a class="caption__heart"><i class="far fa-heart"></i></a>
                                 </figcaption>
                             </figure>
                         </a>
@@ -71,7 +73,7 @@
                                     <h3 class="caption__names">La note enchantée</h3>
                                     <p class="caption__quartier">Charonne</p>
                                     <div class="caption__nouveau"><p>Nouveau</p></div>
-                                    <div class="caption__heart"><i class="far fa-heart"></i></div>
+                                    <a class="caption__heart"><i class="far fa-heart"></i></a>
                                 </figcaption>
                             </figure>
                         </a>
@@ -83,7 +85,7 @@
                                 <figcaption class="card-resto__caption caption">
                                     <h3 class="caption__names">À la française</h3>
                                     <p class="caption__quartier">Cité Rouge</p>
-                                    <div class="caption__heart"><i class="far fa-heart"></i></div>
+                                    <a class="caption__heart"><i class="far fa-heart"></i></a>
                                 </figcaption>
                             </figure>
                         </a>
@@ -95,13 +97,14 @@
                                 <figcaption class="card-resto__caption caption">
                                     <h3 class="caption__names">Le délice des sens</h3>
                                     <p class="caption__quartier">Folie-Méricourt</p>
-                                    <div class="caption__heart"><i class="far fa-heart"></i></div>
+                                    <a class="caption__heart"><i class="far fa-heart"></i></a>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
                 </div>
             </section>
+            </div>
         </main>
         <footer class="footer"> <!--pad-left légèrement plus grand que les sections-->
             <h3 class="footer__title">ohmyfood</h3> <!--titre 'shrikhand'-->

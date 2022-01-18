@@ -1,122 +1,173 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <link rel="stylesheet" href="../public/css/menu.css">
-        <script src="https://kit.fontawesome.com/a5bdff5a37.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">
-        <title>Menu-Le délice des sens</title>
-    </head>
-<body>
-    <header class="header"> <!--titre centré avec un padding-->
-        <div class="header__logo-return"><a href="../index.html"><i class="fas fa-arrow-left"></i></a></div>
-        <h1 class="header__title">ohmyfood</h1>
+  <head>
+    <link rel="stylesheet" href="../public/css/menu.css" />
+    <script
+      src="https://kit.fontawesome.com/a5bdff5a37.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta charset="utf-8" />
+    <title>Menu-Le délice des sens</title>
+  </head>
+  <body>
+    <header class="header">
+      <!--titre centré avec un padding-->
+      <div class="header__logo-return">
+        <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
+      <h1 class="header__title"><a href="../index.html">ohmyfood</a></h1>
     </header>
     <main>
-        <section class="menu">
-            <div class="illustration">
-                <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant Le délice des sens">
+      <section class="menu">
+        <div class="illustration">
+          <img
+            src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="restaurant Le délice des sens"
+          />
+        </div>
+        <div class="bloc-menu">
+          <div class="bloc-menu__header">
+            <!--Menu Le délice des sens 'shrikhand'-->
+            <h2 class="bloc-menu__header__title">Le délice des sens</h2>
+            <div class="bloc-menu__header__logo">
+              <i class="far fa-heart"></i>
             </div>
-            <div class="bloc-menu">
-                <div class="bloc-menu__header"> <!--Menu Le délice des sens 'shrikhand'--> 
-                    <h2 class="bloc-menu__header__title">Le délice des sens</h2>
-                    <div class="bloc-menu__header__logo"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="responsive-menu">
+            <div class="bloc-menu__bloc-repas">
+              <!--ENTREES -->
+              <h3 class="bloc-menu__bloc-repas__title">Entrées</h3>
+              <div class="bloc-menu__bloc-repas__separateur"></div>
+              <div class="bloc-menu__bloc-repas__suggestions suggestions">
+                <div class="suggestions__card card">
+                  <!--Tartare de thon-->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">Tartare de thon</h4>
+                    <p class="card__text__desc-supp">Assaisonné au yuzu</p>
+                  </div>
+                  <p class="card__cost cost">25€</p>
                 </div>
-                <div class="bloc-menu__bloc-repas"> <!--ENTREES -->
-                    <h3 class="bloc-menu__bloc-repas__title">Entrées</h3>
-                    <div class="bloc-menu__bloc-repas__separateur"></div>
-                    <div class="bloc-menu__bloc-repas__suggestions suggestions">
-                        <div class="suggestions__card card"> <!--Tartare de thon-->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Tartare de thon</h4>
-                                <p class="card__text__desc-supp">Assaisonné au yuzu</p>
-                            </div>
-                            <p class="card__cost cost">25€</p>
-                        </div>
-                        <div class="suggestions__card card"> <!--Bouchée de homard croustillant -->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Bouchée de homard croustillant </h4>
-                                <p class="card__text__desc-supp">Et sa farandole de petits légumes</p>
-                            </div>
-                            <p class="card__cost cost">35€</p>
-                        </div>
-                        <div class="suggestions__card card"> <!--Velouté de cèpes-->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Velouté de cèpes</h4>
-                                <p class="card__text__desc-supp">Aux truffes</p>
-                            </div>
-                            <p class="card__cost cost">20€</p>
-                        </div>
-                    </div>
+                <div class="suggestions__card card">
+                  <!--Bouchée de homard croustillant -->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">
+                      Bouchée de homard croustillant
+                    </h4>
+                    <p class="card__text__desc-supp">
+                      Et sa farandole de petits légumes
+                    </p>
+                  </div>
+                  <p class="card__cost cost">35€</p>
                 </div>
-                <div class="bloc-menu__bloc-repas"> <!--PLATS -->
-                    <h3 class="bloc-menu__bloc-repas__title">Plats</h3>
-                    <div class="bloc-menu__bloc-repas__separateur"></div>
-                    <div class="bloc-menu__bloc-repas__suggestions suggestions">
-                        <div class="suggestions__card card"> <!--Poulet rôti aux herbes de Provence -->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Poulet rôti aux herbes de Provence </h4>
-                                <p class="card__text__desc-supp">Et sa crème de truffe</p>
-                            </div>
-                            <p class="card__cost cost">40€</p>
-                        </div>
-                        <div class="suggestions__card card"> <!--Langouste rôtie -->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Langouste rôtie </h4>
-                                <p class="card__text__desc-supp">Et ses légumes de saison</p>
-                            </div>
-                            <p class="card__cost cost">35€</p>
-                        </div>
-                        <div class="suggestions__card card"> <!--Côte de boeuf Angus-->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Côte de boeuf Angus</h4>
-                                <p class="card__text__desc-supp">Et sa purée de panais</p>
-                            </div>
-                            <p class="card__cost cost">44€</p>
-                        </div>
-                    </div>
+                <div class="suggestions__card card">
+                  <!--Velouté de cèpes-->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">Velouté de cèpes</h4>
+                    <p class="card__text__desc-supp">Aux truffes</p>
+                  </div>
+                  <p class="card__cost cost">20€</p>
                 </div>
-                <div class="bloc-menu__bloc-repas"> <!--DESSERTS -->
-                    <h3 class="bloc-menu__bloc-repas__title">Desserts</h3>
-                    <div class="bloc-menu__bloc-repas__separateur"></div>
-                    <div class="bloc-menu__bloc-repas__suggestions suggestions">
-                        <div class="suggestions__card card"> <!--Farandole de desserts-->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Farandole de desserts</h4>
-                                <p class="card__text__desc-supp">Du chef</p>
-                            </div>
-                            <p class="card__cost cost">18€</p>
-                        </div>
-                        <div class="suggestions__card card"> <!--Crème brulée-->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Crème brulée</h4>
-                                <p class="card__text__desc-supp">Revisitée</p>
-                            </div>
-                            <p class="card__cost cost">22€</p>
-                        </div>
-                        <div class="suggestions__card card"> <!--Tiramisu-->
-                            <div class="card__text text">
-                                <h4 class="card__text__title">Tiramisu</h4>
-                                <p class="card__text__desc-supp">À la noisette</p>
-                            </div>
-                            <p class="card__cost cost">23€</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="btn">
-                <button class="btn__commander">Commander</button>
-            </div> 
-        </section>  
+            <div class="bloc-menu__bloc-repas">
+              <!--PLATS -->
+              <h3 class="bloc-menu__bloc-repas__title">Plats</h3>
+              <div class="bloc-menu__bloc-repas__separateur"></div>
+              <div class="bloc-menu__bloc-repas__suggestions suggestions">
+                <div class="suggestions__card card">
+                  <!--Poulet rôti aux herbes de Provence -->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">
+                      Poulet rôti aux herbes de Provence
+                    </h4>
+                    <p class="card__text__desc-supp">Et sa crème de truffe</p>
+                  </div>
+                  <p class="card__cost cost">40€</p>
+                </div>
+                <div class="suggestions__card card">
+                  <!--Langouste rôtie -->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">Langouste rôtie</h4>
+                    <p class="card__text__desc-supp">
+                      Et ses légumes de saison
+                    </p>
+                  </div>
+                  <p class="card__cost cost">35€</p>
+                </div>
+                <div class="suggestions__card card">
+                  <!--Côte de boeuf Angus-->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">Côte de boeuf Angus</h4>
+                    <p class="card__text__desc-supp">Et sa purée de panais</p>
+                  </div>
+                  <p class="card__cost cost">44€</p>
+                </div>
+              </div>
+            </div>
+            <div class="bloc-menu__bloc-repas">
+              <!--DESSERTS -->
+              <h3 class="bloc-menu__bloc-repas__title">Desserts</h3>
+              <div class="bloc-menu__bloc-repas__separateur"></div>
+              <div class="bloc-menu__bloc-repas__suggestions suggestions">
+                <div class="suggestions__card card">
+                  <!--Farandole de desserts-->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">Farandole de desserts</h4>
+                    <p class="card__text__desc-supp">Du chef</p>
+                  </div>
+                  <p class="card__cost cost">18€</p>
+                </div>
+                <div class="suggestions__card card">
+                  <!--Crème brulée-->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">Crème brulée</h4>
+                    <p class="card__text__desc-supp">Revisitée</p>
+                  </div>
+                  <p class="card__cost cost">22€</p>
+                </div>
+                <div class="suggestions__card card">
+                  <!--Tiramisu-->
+                  <div class="card__text text">
+                    <h4 class="card__text__title">Tiramisu</h4>
+                    <p class="card__text__desc-supp">À la noisette</p>
+                  </div>
+                  <p class="card__cost cost">23€</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn">
+            <button class="btn__commander">Commander</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <h3 class="footer__title">ohmyfood</h3>
-        <div class="footer__infos">
-            <div class="footer__ustensils-hands"><div class="icon-container-footer"><i class="footer__icons fas fa-utensils ustensils"></i></div><a href="#">Proposer un restaurant</a></div>
-            <div class="footer__ustensils-hands"><div class="icon-container-footer"><i class="footer__icons fas fa-hands-helping hands-helping"></i></div><a href="#">Devenir partenaire</a></div>
-            <div><a href="#">Mentions légales</a></div>
-            <div><a href="mailto:lol.tab.C@gmail.com">Contact</a></div>
-        </div> 
+      <!--pad-left légèrement plus grand que les sections-->
+      <h3 class="footer__title">ohmyfood</h3>
+      <!--titre 'shrikhand'-->
+      <div class="footer__infos">
+        <!--4 liens: icones devant les deux premiers et le dernier renvoi vers mail-->
+        <div class="footer__infos--premieres">
+          <div class="footer__infos--premieres__icon-container">
+            <i class="fas fa-utensils ustensils"></i>
+          </div>
+          <a href="#">Proposer un restaurant</a>
+        </div>
+        <div class="footer__infos--premieres">
+          <div class="footer__infos--premieres__icon-container">
+            <i class="fas fa-hands-helping hands-helping"></i>
+          </div>
+          <a href="#">Devenir partenaire</a>
+        </div>
+        <div><a href="#">Mentions légales</a></div>
+        <div><a href="mailto:projet3@gmail.com">Contact</a></div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

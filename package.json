@@ -6,7 +6,8 @@
   "dependencies": {},
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
-    "sass-menu": "sass --watch ./sass/menu.scss:./public/css/menu.css"
+    "sass-menu": "sass --watch ./sass/menu.scss:./public/css/menu.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,7 @@
   },
   "author": "Loïc Caouën",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Pyke7/LoicCaouen_3_16112021/issues"
   },

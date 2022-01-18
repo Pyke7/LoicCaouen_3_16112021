@@ -1,6 +1,5 @@
 .header{  /*grand titre centré 'shirkhand'*/
-    @include flex-row-center;
-    align-items: center;
+    @include flex-center;
     
     &__title{
         font-size: $big-title;
