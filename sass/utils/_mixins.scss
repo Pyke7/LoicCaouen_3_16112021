@@ -149,13 +149,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
-    /*transition:transform 0.5s ease-out 1s;*/
 }
 
 @mixin heart{
     color: #000;
     font-size: 25px;
     cursor:pointer;
+}
+
+@mixin gradient-hover {
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 // Responsive
@@ -169,5 +174,19 @@
 @mixin talette-only {
     @media screen and(max-width: map-get($map: $breakpoints, $key: tablette)){
         @content;
+    }
+}
+
+
+//Animation Coche verte
+
+@mixin coche {
+    &:hover::after{
+        opacity: 1;
+    }
+    &::after{
+        background: $color-tertiary;
+        opacity: 0;
+        
     }
 }

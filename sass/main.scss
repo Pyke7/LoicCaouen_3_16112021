@@ -166,6 +166,12 @@ body {
 .card-resto {
   @include card-resto;
   position: relative;
+  transform: scale(1);
+  transition: transform 200ms;
+
+  &:hover{
+    transform: scale(1.05);
+  }
 
   @include desktop-only {
     max-width: 310px;
@@ -212,10 +218,8 @@ body {
     position: absolute;
     right: 20px;
     bottom: 28px;
-    // transform: opacity(1);
-    // transition: transform 200ms;
     &:hover i {
-      // transform: opacity(0);
+      
       font-weight: 600;
       transition-duration: 0.5s;
     }
@@ -225,7 +229,7 @@ body {
     &:hover::before {
       cursor: pointer;
       @include heart_hover;
-      transition: transform ease-in-out 0.5;
+      transition: transform ease-in-out 0.5s;
     }
   }
 }
@@ -243,9 +247,9 @@ body {
 //   top: 0;
 //   bottom: 0;
 //   background-color: $color-primary;
-//   animation: 15s loader-bg forwards;
+//   animation: 5s loader-bg forwards;
 
-//   display: none;
+//   // display: none;
 //   i {
 //     position: fixed;
 //     animation: 3s spin 200ms forwards;

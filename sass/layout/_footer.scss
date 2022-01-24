@@ -4,9 +4,10 @@
     padding: 20px 20px 35px 30px;
 
     &__title{
-        font-family: 'shrikhand';
         margin-top: 0;
+        font-family: 'shrikhand';
         font-size: $medium-description;
+        color: $color-white !important;
 
         @include desktop-only{
             display: flex;
@@ -52,3 +53,12 @@
     }
 }
 
+.blanc{
+    color: $color-white;
+}
+
+.gradient-hover{
+    &:hover{
+        @include gradient-hover;
+    }
+}

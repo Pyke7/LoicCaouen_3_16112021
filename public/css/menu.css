@@ -63,9 +63,10 @@ figure {
   padding: 20px 20px 35px 30px;
 }
 .footer__title {
-  font-family: "shrikhand";
   margin-top: 0;
+  font-family: "shrikhand";
   font-size: 16px;
+  color: #FFFFFF !important;
 }
 @media screen and (min-width: 1024px) {
   .footer__title {
@@ -114,6 +115,16 @@ figure {
   font-size: 12px;
 }
 
+.blanc {
+  color: #FFFFFF;
+}
+
+.gradient-hover:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body {
   background-color: #FFFF;
   font-family: "roboto";
@@ -134,6 +145,11 @@ body {
 }
 .header__logo-return i {
   color: #353535;
+}
+.header__logo-return i .gradient-hover:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (min-width: 1024px) {
@@ -265,11 +281,13 @@ body {
   margin: 20px 5px 5px 5px;
   text-transform: uppercase;
 }
-.bloc-menu__bloc-repas__separateur {
+.bloc-menu__bloc-repas__title::after {
+  content: "";
+  display: block;
   background-color: #99E2D0;
   height: 3px;
   width: 40px;
-  margin-left: 5px;
+  margin-top: 5px;
 }
 .bloc-menu__bloc-repas__suggestions {
   margin-top: 12px;
@@ -281,6 +299,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
   background-color: #FFFFFF;
   padding: 10px 20px 10px 10px;
   border-radius: 15px;
@@ -302,6 +323,127 @@ body {
   font-weight: bold;
   color: #353535;
   margin: 0;
+}
+
+.heart {
+  color: #000;
+  font-size: 25px;
+  cursor: pointer;
+}
+.heart:hover i {
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+.heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.heart:hover::before {
+  cursor: pointer;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: transform ease-in-out 0.5s;
+}
+
+.fondu {
+  animation: effetfondu 800ms forwards ease-in-out;
+}
+
+.n1 {
+  animation-delay: 150ms;
+}
+
+.n2 {
+  animation-delay: 150ms;
+}
+
+.n3 {
+  animation-delay: 150ms;
+}
+
+.n4 {
+  animation-delay: 300ms;
+}
+
+.n5 {
+  animation-delay: 375ms;
+}
+
+.n6 {
+  animation-delay: 450ms;
+}
+
+.n7 {
+  animation-delay: 525ms;
+}
+
+.n8 {
+  animation-delay: 600ms;
+}
+
+.n9 {
+  animation-delay: 675ms;
+}
+
+.n10 {
+  animation-delay: 750ms;
+}
+
+.n11 {
+  animation-delay: 825ms;
+}
+
+.n12 {
+  animation-delay: 900ms;
+}
+
+.n13 {
+  animation-delay: 975ms;
+}
+
+@keyframes effetfondu {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card__validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #99E2D0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 2s;
+}
+.card__validation__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+.card__validation__logo--check {
+  color: #99E2D0;
+  font-size: 14px;
+}
+.card__validation:hover {
+  transform: scaleX(1);
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -63,9 +63,10 @@ figure {
   padding: 20px 20px 35px 30px;
 }
 .footer__title {
-  font-family: "shrikhand";
   margin-top: 0;
+  font-family: "shrikhand";
   font-size: 16px;
+  color: #FFFFFF !important;
 }
 @media screen and (min-width: 1024px) {
   .footer__title {
@@ -112,6 +113,16 @@ figure {
   height: 15px;
   margin-right: 10px;
   font-size: 12px;
+}
+
+.blanc {
+  color: #FFFFFF;
+}
+
+.gradient-hover:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
@@ -323,6 +334,11 @@ body {
   margin-bottom: 15px;
   box-shadow: 5px 5px 10px #E6E6E6;
   position: relative;
+  transform: scale(1);
+  transition: transform 200ms;
+}
+.card-resto:hover {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 1024px) {
   .card-resto {
@@ -386,7 +402,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  /*transition:transform 0.5s ease-out 1s;*/
 }
 .caption__heart:hover::before {
   cursor: pointer;
@@ -394,8 +409,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  /*transition:transform 0.5s ease-out 1s;*/
-  transition: transform ease-in-out 0.5;
+  transition: transform ease-in-out 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

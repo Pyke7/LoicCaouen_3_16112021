@@ -8,7 +8,7 @@
         <title>Ohmyfood!</title>
     </head>
     <body>
-        <!-- <div class="loader-container"><i class="fas fa-spinner"></i></div> loader de la page avec fond grisé -->
+        <!-- <div class="loader-container"><i class="fas fa-spinner"></i></div> -->
         <header class="header"> <!--titre centré avec un padding 'shrikhand'-->
             <h1 class="header__title"><a href="./index.html"> ohmyfood</a></h1>
         </header>
@@ -20,7 +20,7 @@
             <div class="description"> <!--tout est centré-->
                 <h2 class="description__title">Réservez le menu qui vous convient</h2>
                 <p class="description__details">Découvrez des restaurants d'execption, séléctionnés par nos soins.</p>
-                <a href="#restaurants"><button class="description__btn">Explorer nos restaurants</button></a>
+                <a href="#restaurants" class="description__btn">Explorer nos restaurants</a>
             </div>
             <div class="desktop-responsive">
             <section class="fonctionnement"> <!--fonctionnement=un titre + 3 étapes (padding)-->
@@ -60,7 +60,7 @@
                                     <h3 class="caption__names">La palette du goût</h3>
                                     <p class="caption__quartier">Ménilmontant</p>
                                     <div class="caption__nouveau"><p>Nouveau</p></div>
-                                    <a class="caption__heart"><i class="far fa-heart"></i></a>
+                                    <div class="caption__heart"><i class="far fa-heart"></i></div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -73,7 +73,7 @@
                                     <h3 class="caption__names">La note enchantée</h3>
                                     <p class="caption__quartier">Charonne</p>
                                     <div class="caption__nouveau"><p>Nouveau</p></div>
-                                    <a class="caption__heart"><i class="far fa-heart"></i></a>
+                                    <div class="caption__heart"><i class="far fa-heart"></i></div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -85,7 +85,7 @@
                                 <figcaption class="card-resto__caption caption">
                                     <h3 class="caption__names">À la française</h3>
                                     <p class="caption__quartier">Cité Rouge</p>
-                                    <a class="caption__heart"><i class="far fa-heart"></i></a>
+                                    <div class="caption__heart"><i class="far fa-heart"></i></div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -97,7 +97,7 @@
                                 <figcaption class="card-resto__caption caption">
                                     <h3 class="caption__names">Le délice des sens</h3>
                                     <p class="caption__quartier">Folie-Méricourt</p>
-                                    <a class="caption__heart"><i class="far fa-heart"></i></a>
+                                    <div class="caption__heart"><i class="far fa-heart"></i></div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -107,12 +107,12 @@
             </div>
         </main>
         <footer class="footer"> <!--pad-left légèrement plus grand que les sections-->
-            <h3 class="footer__title">ohmyfood</h3> <!--titre 'shrikhand'-->
+            <h3 class="footer__title"><a href="./index.html"><span class="gradient-hover blanc">ohmyfood</span></a></h3> <!--titre 'shrikhand'-->
             <div class="footer__infos"> <!--4 liens: icones devant les deux premiers et le dernier renvoi vers mail-->
-                <div class="footer__infos--premieres"><div class="footer__infos--premieres__icon-container"><i class="fas fa-utensils ustensils"></i></div><a href="#">Proposer un restaurant</a></div>
-                <div class="footer__infos--premieres"><div class="footer__infos--premieres__icon-container"><i class="fas fa-hands-helping hands-helping"></i></div><a href="#">Devenir partenaire</a></div>
-                <div><a href="#">Mentions légales</a></div>
-                <div><a href="mailto:projet3@gmail.com">Contact</a></div>
+                <div class="footer__infos--premieres gradient-hover"><div class="footer__infos--premieres__icon-container"><i class="fas fa-utensils ustensils"></i></div><a href="#">Proposer un restaurant</a></div>
+                <div class="footer__infos--premieres gradient-hover"><div class="footer__infos--premieres__icon-container"><i class="fas fa-hands-helping hands-helping"></i></div><a href="#">Devenir partenaire</a></div>
+                <div class="gradient-hover"><a href="#">Mentions légales</a></div>
+                <div class="gradient-hover"><a href="mailto:projet3@gmail.com">Contact</a></div>
             </div> 
         </footer>
     </body>
