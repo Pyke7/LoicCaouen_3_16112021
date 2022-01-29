@@ -1,4 +1,135 @@
 @charset "UTF-8";
+.btn {
+  margin: 10px 0 50px 0;
+  position: relative;
+  z-index: 1;
+  border: transparent;
+  border-radius: 30px;
+  background: linear-gradient(-5deg, #9356DC, #FF79DA);
+  box-shadow: 10px 15px 20px #d5d5d5;
+  font-size: 15px;
+  font-weight: 500;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 30px;
+  background: linear-gradient(-5deg, #a16be0, #ff93e1);
+  box-shadow: 10px 15px 20px #bcbcbc;
+  transition: opacity 300ms;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: auto;
+  padding: 15px 50px;
+}
+
+.heart {
+  color: #000;
+  font-size: 25px;
+  cursor: pointer;
+}
+.heart:hover i {
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+.heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.heart:hover::before {
+  cursor: pointer;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: transform ease-in-out 0.5s;
+}
+
+.fondu {
+  animation: fade-in 1s forwards ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.n1 {
+  animation-delay: 75ms;
+}
+
+.n2 {
+  animation-delay: 150ms;
+}
+
+.n3 {
+  animation-delay: 225ms;
+}
+
+.n4 {
+  animation-delay: 300ms;
+}
+
+.n5 {
+  animation-delay: 375ms;
+}
+
+.n6 {
+  animation-delay: 450ms;
+}
+
+.n7 {
+  animation-delay: 525ms;
+}
+
+.n8 {
+  animation-delay: 600ms;
+}
+
+.n9 {
+  animation-delay: 675ms;
+}
+
+.n10 {
+  animation-delay: 750ms;
+}
+
+.n11 {
+  animation-delay: 825ms;
+}
+
+.n12 {
+  animation-delay: 900ms;
+}
+
+.n13 {
+  animation-delay: 975ms;
+}
+
 @font-face {
   font-family: "shrikhand";
   src: url("fonts/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("fonts/shrikhand/shrikhand-regular-webfont.woff") format("woff");
@@ -29,6 +160,10 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  font-size: 62.5%;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -169,37 +304,6 @@ body {
   font-family: "roboto-light";
   font-size: 16px;
   margin-top: 15px;
-}
-.description__btn {
-  margin: 10px 0 50px 0;
-  position: relative;
-  z-index: 1;
-  border: transparent;
-  border-radius: 30px;
-  background: linear-gradient(-5deg, #9356DC, #FF79DA);
-  box-shadow: 10px 15px 20px #d5d5d5;
-  font-size: 15px;
-  font-weight: 500;
-  color: #FFFFFF;
-  cursor: pointer;
-  padding: 15px 20px;
-}
-.description__btn:hover::after {
-  opacity: 1;
-}
-.description__btn::after {
-  content: "";
-  opacity: 0;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-radius: 30px;
-  background: linear-gradient(-5deg, #a16be0, #ff93e1);
-  box-shadow: 10px 15px 20px #bcbcbc;
-  transition: opacity 300ms;
 }
 
 @media screen and (min-width: 1024px) {
@@ -393,23 +497,45 @@ body {
   right: 20px;
   bottom: 28px;
 }
-.caption__heart:hover i {
-  font-weight: 600;
-  transition-duration: 0.5s;
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #99E2D0;
+  animation: 3s loader-bg forwards;
 }
-.caption__heart:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
+.loader-container i {
+  position: fixed;
+  animation: 3s spin 200ms forwards;
+  color: #9356DC;
+  font-size: 60px;
 }
-.caption__heart:hover::before {
-  cursor: pointer;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-  transition: transform ease-in-out 0.5s;
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes loader-bg {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

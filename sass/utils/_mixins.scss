@@ -52,7 +52,6 @@
 
     border: transparent;
     border-radius: 30px;
-    
     background: linear-gradient(-5deg, $color-primary, $color-secondary);
     box-shadow: 10px 15px 20px #d5d5d5;
 
@@ -62,23 +61,7 @@
 
     cursor: pointer;
     
-        &:hover::after{ // Animation: Eclaircie du bouton et box shadow plus prononcée
-            opacity: 1;
-        }
-        &::after{
-            content: "";
-            opacity: 0;
-            z-index: -1;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            border-radius: 30px;
-            background: linear-gradient(-5deg, lighten($color-primary, 5%), lighten($color-secondary, 5%));
-            box-shadow: 10px 15px 20px darken(#d5d5d5, 10%);
-            transition: opacity 300ms; // Animation des boutons
-        }
+        
 }
 
 @mixin step{
@@ -138,11 +121,6 @@
 
 
 // Animations CSS
-
-// @mixin heart{
-//     @include flex-center;
-//     font-size: 20px;
-// }
 
 @mixin heart_hover{
     background: linear-gradient(#9356DC, #FF79DA);

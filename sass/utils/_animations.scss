@@ -1,0 +1,74 @@
+// ANIMATIONS
+
+// ---effet au survol des boutons---
+
+.btn{
+    @include btn-setup;
+    padding: 15px 20px; 
+    
+    &:hover::after{ // Animation: Eclaircie du bouton et box shadow plus prononcée
+        opacity: 1;
+    }
+    &::after{
+        content: "";
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 30px;
+        background: linear-gradient(-5deg, lighten($color-primary, 5%), lighten($color-secondary, 5%));
+        box-shadow: 10px 15px 20px darken(#d5d5d5, 10%);
+        transition: opacity 300ms; // Animation des boutons
+    }
+}
+
+.commander{
+  @include flex-center;
+  display: block;
+  margin: auto;
+  padding: 15px 50px;
+}
+
+// ---effet au survol du coeur---
+
+.heart {
+  @include heart;
+  &:hover i {
+    font-weight: 600;
+    transition-duration: 0.5s;
+  }
+  &:hover {
+    @include heart_hover;
+  }
+  &:hover::before {
+    cursor: pointer;
+    @include heart_hover;
+    transition: transform ease-in-out 0.5s;
+  }
+}
+
+// ---effet de translation fondu décalé sur les élements du menu---
+
+.fondu {
+  animation: fade-in 1s forwards ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@for $i from 1 to 14 {
+  .n#{$i} {
+    animation-delay: 75ms * $i;
+  }
+}
