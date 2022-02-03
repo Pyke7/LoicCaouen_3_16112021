@@ -1,5 +1,54 @@
 // ANIMATIONS
 
+// ---Loading spinner---
+
+.loader-container {
+  @include flex-center;
+  position: fixed;
+  // opacity: 0.9;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $color-primary;
+  animation: 3s loader-bg forwards;
+
+  i {
+    position: fixed;
+    animation: 3s spin  forwards;
+
+    color: $color-secondary;
+    font-size: 100px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotateZ(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes loader-bg {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 // ---effet au survol des boutons---
 
 .btn{
@@ -70,5 +119,49 @@
 @for $i from 1 to 14 {
   .n#{$i} {
     animation-delay: 75ms * $i;
+  }
+}
+
+// effet de validation sur les suggestions
+
+
+.validation{
+  @include flex-center;
+  align-self: center;
+  // display: none;
+  margin: -20px;
+  height: 65px;
+  width: 0;
+  background-color: $color-tertiary;
+  transition: all 300ms;
+  &__logo-container{
+    @include flex-center;
+    width: 25px;
+    height: 25px;
+    background-color: $color-white;
+    border-radius: 50%;
+    &__icon{
+      font-size: 16px;
+      color: $color-tertiary;
+    }
+  }
+}
+
+.card:hover{
+  .validation{
+    width: 25%;
+    display: flex;
+    &__logo-container{
+      animation: spin-check 800ms 100ms;
+    }
+  }
+}
+
+@keyframes spin-check{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }

@@ -1,4 +1,48 @@
 @charset "UTF-8";
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #9356DC;
+  animation: 3s loader-bg forwards;
+}
+.loader-container i {
+  position: fixed;
+  animation: 3s spin forwards;
+  color: #FF79DA;
+  font-size: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotateZ(360deg);
+    opacity: 0;
+  }
+}
+@keyframes loader-bg {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .btn {
   margin: 10px 0 50px 0;
   position: relative;
@@ -130,6 +174,47 @@
   animation-delay: 975ms;
 }
 
+.validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: -20px;
+  height: 65px;
+  width: 0;
+  background-color: #99E2D0;
+  transition: all 300ms;
+}
+.validation__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.validation__logo-container__icon {
+  font-size: 16px;
+  color: #99E2D0;
+}
+
+.card:hover .validation {
+  width: 25%;
+  display: flex;
+}
+.card:hover .validation__logo-container {
+  animation: spin-check 800ms 100ms;
+}
+
+@keyframes spin-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @font-face {
   font-family: "shrikhand";
   src: url("fonts/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("fonts/shrikhand/shrikhand-regular-webfont.woff") format("woff");
@@ -210,6 +295,12 @@ figure {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer__title {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer__infos {
   font-family: "roboto-light";
   font-size: 14px;
@@ -221,6 +312,15 @@ figure {
     display: flex;
     justify-content: center;
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
   }
 }
 
@@ -328,12 +428,16 @@ body {
   border-radius: 30px 30px 0 0;
   position: relative;
   bottom: 45px;
-  max-width: 1024px;
 }
 @media screen and (min-width: 1024px) {
   .bloc-menu {
     width: 100%;
     padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bloc-menu {
+    width: 80%;
   }
 }
 .bloc-menu__header {
@@ -424,37 +528,6 @@ body {
   font-weight: bold;
   color: #353535;
   margin: 0;
-}
-
-.card__validation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 25%;
-  height: 100%;
-  background-color: #99E2D0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 2s;
-}
-.card__validation__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
-}
-.card__validation__logo--check {
-  color: #99E2D0;
-  font-size: 14px;
-}
-.card__validation:hover {
-  transform: scaleX(1);
 }
 
 /*# sourceMappingURL=menu.css.map */

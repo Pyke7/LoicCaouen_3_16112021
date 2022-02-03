@@ -143,18 +143,17 @@
 
 // Responsive
 
+@mixin tablette-only {
+    @media screen and(min-width: map-get($map: $breakpoints, $key: tablette)){
+        @content;
+    }
+}
+
 @mixin desktop-only {
     @media screen and(min-width: map-get($map: $breakpoints, $key: desktop)){
         @content;
     }
 }
-
-@mixin talette-only {
-    @media screen and(max-width: map-get($map: $breakpoints, $key: tablette)){
-        @content;
-    }
-}
-
 
 //Animation Coche verte
 
