@@ -144,7 +144,7 @@
 // Responsive
 
 @mixin tablette-only {
-    @media screen and(min-width: map-get($map: $breakpoints, $key: tablette)){
+    @media screen and(min-width: map-get($map: $breakpoints, $key: tablette))and (max-width: 1024px){
         @content;
     }
 }

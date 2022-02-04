@@ -128,7 +128,7 @@
 .validation{
   @include flex-center;
   align-self: center;
-  // display: none;
+  display: none;
   margin: -20px;
   height: 65px;
   width: 0;
@@ -152,7 +152,7 @@
     width: 25%;
     display: flex;
     &__logo-container{
-      animation: spin-check 800ms 100ms;
+      animation: spin-check 600ms 100ms;
     }
   }
 }
