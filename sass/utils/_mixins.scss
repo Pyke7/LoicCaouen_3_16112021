@@ -156,14 +156,3 @@
 }
 
 //Animation Coche verte
-
-@mixin coche {
-    &:hover::after{
-        opacity: 1;
-    }
-    &::after{
-        background: $color-tertiary;
-        opacity: 0;
-        
-    }
-}

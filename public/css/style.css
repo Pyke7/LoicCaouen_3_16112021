@@ -330,7 +330,7 @@ figure {
 }
 @media screen and (min-width: 1024px) {
   .footer__infos a {
-    margin-right: 0px;
+    margin-right: 75px;
   }
 }
 .footer__infos--premieres {
@@ -547,6 +547,7 @@ body {
   .restaurants__bloc-resto {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 

@@ -128,7 +128,7 @@
 .validation{
   @include flex-center;
   align-self: center;
-  display: none;
+  // display: none;
   margin: -20px;
   height: 65px;
   width: 0;
@@ -149,7 +149,7 @@
 
 .card:hover{
   .validation{
-    width: 25%;
+    width: 70px;
     display: flex;
     &__logo-container{
       animation: spin-check 600ms 100ms;
