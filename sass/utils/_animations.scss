@@ -129,8 +129,6 @@
     @include flex-row-between;
     padding: 0 2rem 0 0;
     height: 100%;
-    transform: translateX(0rem);
-    transition: transform 300ms ease-in-out;
   }
 }
 
@@ -138,7 +136,9 @@
   @include flex-center;
   background-color: $color-tertiary;
   border: none;
-  width: 8rem;
+  width: 0;
+  margin-right: -2rem;
+  visibility: hidden;
 
 
   &__logo-container{
@@ -159,13 +159,21 @@
     width: 20rem;
   }
   
-  .container-validation{
-    transform: translateX(-8rem);
-  }
+  // .container-validation{
+  //   transform: translateX(-8rem);
+  // }
 
   .check{
+    animation: slidIn 0.2s forwards;
     &__logo-container{
       transform: rotate(360deg);
     }
+  }
+}
+
+@keyframes slidIn{
+  to{
+    width: 8em;
+    visibility: visible;
   }
 }

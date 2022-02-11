@@ -180,8 +180,6 @@
   justify-content: space-between;
   padding: 0 2rem 0 0;
   height: 100%;
-  transform: translateX(0rem);
-  transition: transform 300ms ease-in-out;
 }
 
 .check {
@@ -190,7 +188,9 @@
   align-items: center;
   background-color: #99E2D0;
   border: none;
-  width: 8rem;
+  width: 0;
+  margin-right: -2rem;
+  visibility: hidden;
 }
 .check__logo-container {
   display: flex;
@@ -209,13 +209,19 @@
 .card:hover .text {
   width: 20rem;
 }
-.card:hover .container-validation {
-  transform: translateX(-8rem);
+.card:hover .check {
+  animation: slidIn 0.2s forwards;
 }
 .card:hover .check__logo-container {
   transform: rotate(360deg);
 }
 
+@keyframes slidIn {
+  to {
+    width: 8em;
+    visibility: visible;
+  }
+}
 @font-face {
   font-family: "shrikhand";
   src: url("fonts/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("fonts/shrikhand/shrikhand-regular-webfont.woff") format("woff");
@@ -513,8 +519,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 28rem;
-  min-width: 28rem;
   padding-left: 1rem;
   transition: width 0.3s ease-in-out;
 }

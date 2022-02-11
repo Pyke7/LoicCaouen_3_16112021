@@ -147,8 +147,6 @@ body {
  
   &__text {
     @include flex-column-center;
-    width: 28rem;
-    min-width: 28rem;
     padding-left: 1rem;
     transition: width 0.3s ease-in-out;
     
