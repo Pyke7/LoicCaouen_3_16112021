@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="../public/css/menu.css" />
     <script
       src="https://kit.fontawesome.com/a5bdff5a37.js"
@@ -10,13 +11,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <meta charset="utf-8" />
     <title>Menu-Le délice des sens</title>
   </head>
   <body>
     <header class="header">
       <!--titre centré avec un padding-->
-      <div class="header__logo-return">
+      <div class="header__logo-return"> <!--permet le retour à la page d'accueil-->
         <a href="../index.html"
           ><i class="fas fa-arrow-left gradient-hover"></i
         ></a>
@@ -28,12 +28,12 @@
         <div class="illustration">
           <img
             src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-            alt="restaurant Le délice des sens"
+            alt="restaurant le delice des sens"
           />
         </div>
         <div class="bloc-menu">
           <div class="bloc-menu__header">
-            <!--Menu Le délice des sens 'shrikhand'-->
+            <!--Menu le delice des sens'-->
             <h2 class="bloc-menu__header__title">Le délice des sens</h2>
             <div class="bloc-menu__header__logo heart">
               <i class="far fa-heart"></i>
@@ -45,32 +45,40 @@
               <h3 class="bloc-menu__bloc-repas__title fondu n1">Entrées</h3>
               <div class="bloc-menu__bloc-repas__suggestions suggestions">
                 <div class="suggestions__card card fondu n2">
-                  <!--Tartare de thon-->
-                  <div class="card__text text">
+                  <div class="card__text">
                     <h4 class="card__text__title">Tartare de thon</h4>
                     <p class="card__text__desc-supp">Assaisonné au yuzu</p>
                   </div>
-                  <p class="card__cost cost">25€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">25€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="suggestions__card card fondu n3">
-                  <!--Bouchée de homard croustillant -->
-                  <div class="card__text text">
-                    <h4 class="card__text__title">
-                      Bouchée de homard croustillant
-                    </h4>
-                    <p class="card__text__desc-supp">
-                      Et sa farandole de petits légumes
-                    </p>
+                  <div class="card__text">
+                    <h4 class="card__text__title">Bouchée de homard croustillant</h4>
+                    <p class="card__text__desc-supp">Et sa farandole de petits légumes</p>
                   </div>
-                  <p class="card__cost cost">35€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">35€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="suggestions__card card fondu n4">
-                  <!--Velouté de cèpes-->
                   <div class="card__text text">
                     <h4 class="card__text__title">Velouté de cèpes</h4>
                     <p class="card__text__desc-supp">Aux truffes</p>
                   </div>
-                  <p class="card__cost cost">20€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">20€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -79,32 +87,40 @@
               <h3 class="bloc-menu__bloc-repas__title fondu n5">Plats</h3>
               <div class="bloc-menu__bloc-repas__suggestions suggestions">
                 <div class="suggestions__card card fondu n6">
-                  <!--Poulet rôti aux herbes de Provence -->
                   <div class="card__text text">
-                    <h4 class="card__text__title">
-                      Poulet rôti aux herbes de Provence
-                    </h4>
+                    <h4 class="card__text__title">Poulet rôti aux herbes de Provence </h4>
                     <p class="card__text__desc-supp">Et sa crème de truffe</p>
                   </div>
-                  <p class="card__cost cost">40€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">40€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="suggestions__card card fondu n7">
-                  <!--Langouste rôtie -->
                   <div class="card__text text">
-                    <h4 class="card__text__title">Langouste rôtie</h4>
-                    <p class="card__text__desc-supp">
-                      Et ses légumes de saison
-                    </p>
+                    <h4 class="card__text__title">Langouste rôtie </h4>
+                    <p class="card__text__desc-supp">Et ses légumes de saison</p>
                   </div>
-                  <p class="card__cost cost">35€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">35€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="suggestions__card card fondu n8">
-                  <!--Côte de boeuf Angus-->
                   <div class="card__text text">
                     <h4 class="card__text__title">Côte de boeuf Angus</h4>
                     <p class="card__text__desc-supp">Et sa purée de panais</p>
                   </div>
-                  <p class="card__cost cost">44€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">44€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -113,28 +129,40 @@
               <h3 class="bloc-menu__bloc-repas__title fondu n9">Desserts</h3>
               <div class="bloc-menu__bloc-repas__suggestions suggestions">
                 <div class="suggestions__card card fondu n10">
-                  <!--Farandole de desserts-->
                   <div class="card__text text">
                     <h4 class="card__text__title">Farandole de desserts</h4>
                     <p class="card__text__desc-supp">Du chef</p>
                   </div>
-                  <p class="card__cost cost">18€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">18€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="suggestions__card card fondu n11">
-                  <!--Crème brulée-->
                   <div class="card__text text">
-                    <h4 class="card__text__title">Crème brulée</h4>
+                    <h4 class="card__text__title">Crème brulée </h4>
                     <p class="card__text__desc-supp">Revisitée</p>
                   </div>
-                  <p class="card__cost cost">22€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">22€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="suggestions__card card fondu n12">
-                  <!--Tiramisu--> 
                   <div class="card__text text">
-                    <h4 class="card__text__title">Tiramisu</h4>
+                    <h4 class="card__text__title">Tiramisu </h4>
                     <p class="card__text__desc-supp">À la noisette</p>
                   </div>
-                  <p class="card__cost cost">23€</p>
+                  <div class="card__container-validation container-validation">
+                    <p class="cost">23€</p>
+                    <div class="check">
+                      <div class="check__logo-container logo-container"><i class="fas fa-check"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
