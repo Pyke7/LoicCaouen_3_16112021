@@ -151,6 +151,7 @@ body {
     @include flex-column-center;
     padding-left: 1rem;
     transition: width 0.3s ease-in-out;
+    flex: 1;
     
     &__title {
       font-size: 16px;
