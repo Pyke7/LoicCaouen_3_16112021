@@ -12,7 +12,8 @@
   left: 0;
   bottom: 0;
   background-color: #9356DC;
-  animation: 3s loader-bg forwards;
+  animation: 0.5s loader-bg forwards;
+  animation-delay: 2s;
 }
 .loader-container i {
   position: fixed;
@@ -174,46 +175,52 @@
   animation-delay: 975ms;
 }
 
-.validation {
+.card__container-validation {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  display: none;
-  margin: -20px;
-  height: 65px;
-  width: 0;
-  background-color: #99E2D0;
-  transition: all 300ms;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2rem 0 0;
+  height: 100%;
 }
-.validation__logo-container {
+
+.check {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #99E2D0;
+  border: none;
+  width: 0;
+  margin-right: -2rem;
+  visibility: hidden;
+}
+.check__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  border-radius: 50%;
   width: 25px;
   height: 25px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-}
-.validation__logo-container__icon {
-  font-size: 16px;
-  color: #99E2D0;
+  transform: rotate(-180deg);
+  transition: transform 300ms;
 }
 
-.card:hover .validation {
-  width: 25%;
-  display: flex;
+.card:hover .text {
+  width: 20rem;
 }
-.card:hover .validation__logo-container {
-  animation: spin-check 600ms 100ms;
+.card:hover .check {
+  animation: slidIn 0.2s forwards;
+}
+.card:hover .check__logo-container {
+  transform: rotate(360deg);
 }
 
-@keyframes spin-check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+@keyframes slidIn {
+  to {
+    width: 8em;
+    visibility: visible;
   }
 }
 @font-face {
@@ -246,6 +253,10 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }

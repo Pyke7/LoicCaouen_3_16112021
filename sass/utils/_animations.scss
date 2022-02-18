@@ -14,7 +14,8 @@
   left: 0;
   bottom: 0;
   background-color: $color-primary;
-  animation: 3s loader-bg forwards;
+  animation: 0.5s loader-bg forwards;
+  animation-delay: 2s;
 
   i {
     position: fixed;
